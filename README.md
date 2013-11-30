@@ -27,7 +27,7 @@ bower install apostle
 
 ### Installing manually
 
-Download the latest code from GitHub, and include `lib/index.js`.
+Download the latest code from GitHub, and include `lib/index.js` in your html.
 
 
 ## Usage
@@ -42,7 +42,7 @@ apostle.domainKey = "Your domain key";
 
 ### Sending Email
 
-Sending an email is easy, a minimal example may look like this
+Sending an email is easy, a minimal example may look like this.
 
 ```
 apostle.mail('welcome_email', {email: 'mal@apostle.io'});
@@ -64,11 +64,11 @@ apostle.mail('order_complete', {
 });
 ```
 
-You can provide a callback for success, validation failure and delivery failure.
+You can provide a callback for success, validation failure and delivery failure `fn(success, message, response)`.
 
 * In the case of success, only the success flag will be supplied.
-* In the case of invalid parameters being passed, no external request will be made and all parameters will be supplied. The message will be 'invalid', and the response object will be an array of mail messages with an error property.
-* In the case of deliver failure, all parameters will be supplied. The message param will be set to 'error', and the response object will be a [Superagent Response Object](http://visionmedia.github.io/superagent/#response-properties). See below for error status codes and their meanings.
+* In the case of invalid parameters being passed, no external request will be made and all parameters will be supplied. `message` will be `"invalid"`, and `response` will be an array of mail messages with an error property.
+* In the case of deliver failure, all parameters will be supplied. `message` will be `"error"`, and `response`  will be a [Superagent Response Object](http://visionmedia.github.io/superagent/#response-properties). See below for error status codes and their meanings.
 
 
 ```
@@ -133,7 +133,6 @@ When recieving a callback with `success == false && message == 'error'`, it mean
 * `response.badRequest`, `response.status == 400` – Either no json, or invalid json was supplied to the delivery endpoint. This should not occur when using the library correctly.
 * `response.status == 422` – Unprocessable entitity. An invalid payload was supplied, usually a missing email or template id, or no recipients key. `Apostle.js` should validate before sending, so it is unlikely you will see this response.
 * `response.serverError`, `response.status == 500` – Server error occured. Something went wrong at the Apostle API, you should try again with exponential backoff.
-
 
 
 ## Who
