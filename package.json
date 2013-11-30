@@ -1,0 +1,26 @@
+{
+  "name": "apostle.js",
+  "version": "0.1.0",
+  "description": "JavaScript and node.js bindings for Apostle.io",
+  "author": "Mal Curtis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/apostle/apostle.js.git"
+  },
+  "homepage": "http://github.com/apostle/apostle.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "main": "./lib/apostle.js",
+  "dependencies": {
+	  "superagent": "~0.15"
+  },
+  "devDependencies": {
+    "mocha": "~1.14",
+	"sinon": "~1.7"
+  },
+  "scripts": {
+    "test": "test/run.sh"
+  }
+}
