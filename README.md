@@ -29,6 +29,8 @@ bower install apostle
 
 Download the latest code from GitHub, and include `lib/index.js` in your html.
 
+Apostle.js depends on [Superagent](https://github.com/visionmedia/superagent), which you will need to install too.
+
 
 ## Usage
 
