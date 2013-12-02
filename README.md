@@ -29,7 +29,7 @@ bower install apostle
 
 Download the latest code from GitHub, and include `lib/index.js` in your html.
 
-Apostle.js depends on [Superagent](https://github.com/visionmedia/superagent), which you will need to install too.
+Apostle.js depends on [Superagent](https://github.com/visionmedia/superagent), which you will need to make available to the browser too.
 
 
 ## Usage
@@ -39,77 +39,80 @@ Apostle.js depends on [Superagent](https://github.com/visionmedia/superagent), w
 You will need to provide your apostle domain key to send emails.
 
 ```js
-apostle.domainKey = "Your domain key";
+apostle.domainKey: "Your domain key";
 ```
 
 ### Sending Email
 
 Sending an email is easy, a minimal example may look like this.
 
-```
-apostle.mail('welcome_email', {email: 'mal@apostle.io'});
+```js
+apostle.deliver('welcome_email', {email: 'mal@apostle.io'});
 ```
 
 You can pass any information that your Apostle.io template might need.
 
 
-```
+```js
 var order = {
 	items: ['Widget frame', 'Widget chain', 'Widget seat'],
 	id: "abc123"
 };
 
-apostle.mail('order_complete', {
+apostle.deliver('order_complete', {
 	email: 'mal@apostle.io',
 	replyTo: 'support@apostle.io',
 	order: order
 });
 ```
 
-You can provide a callback for success, validation failure and delivery failure `fn(success, message, response)`.
+### Promises
+`apostle.deliver` returns a promise that you can attach success and error callbacks to.
 
-* In the case of success, only the success flag will be supplied.
-* In the case of invalid parameters being passed, no external request will be made and all parameters will be supplied. `message` will be `"invalid"`, and `response` will be an array of mail messages with an error property.
-* In the case of deliver failure, all parameters will be supplied. `message` will be `"error"`, and `response`  will be a [Superagent Response Object](http://visionmedia.github.io/superagent/#response-properties). See below for error status codes and their meanings.
-
-
+```js
+var success = function(){},
+	error = function(message, response){};
+	
+apostle.deliver(…).then(success, error);
 ```
-var callback = function(success, message, response){};
+
+* Success does not receive any arguments.
+* In the case of invalid details being passed, no external request will be made the promise will be rejected. `message` will be `"invalid"`, and `response` will be an array of mail messages with an error property.
+* In the case of delivery failure, the promise will be rejected. `message` will be `"error"`, and `response`  will be a [Superagent Response Object](http://visionmedia.github.io/superagent/#response-properties). See below for error status codes and their meanings.
+
+
+```js
+var success = function(){},
+	error = function(message, response){};
 
 // Invalid Template
-apostle.mail(false, {email: 'mal@apostle.io'}, callback);
+apostle.mail(false, {email: 'mal@apostle.io'}).then(success, error);
 /**
- * Callback will receive
- * success: false
+ * error will receive
  * message: 'invalid'
  * response: [{ email: 'mal@apostle.io', error: 'No template provided'}]
  */
  
 // Invalid Email
-apostle.mail('welcome_email', {}, callback);
+apostle.mail('welcome_email', {}).then(success, error);
 /**
- * Callback will receive
- * success: false
+ * error will receive
  * message: 'invalid'
  * response: [{ template_id: 'welcome_email', error: 'No email provided'}]
  */
 
 // In the case of a server error
-apostle.mail('welcome_email', {email: 'mal@apostle.io'}, callback);
+apostle.mail('welcome_email', {email: 'mal@apostle.io'}).then(success, error);
 /**
- * Callback will receive
- * success: false
+ * error will receive
  * message: 'error'
  * response: Superagent Response Object
  */
  
 // Success
-apostle.mail('welcome_email', {email: 'mal@apostle.io'}, callback);
+apostle.mail('welcome_email', {email: 'mal@apostle.io'}).then(success, error);
 /**
- * Callback will receive
- * success: true
- * message: undefined
- * response: undefined
+ * success will be called with no arguments
  */
 
 ```
@@ -118,18 +121,18 @@ apostle.mail('welcome_email', {email: 'mal@apostle.io'}, callback);
 
 You can send multiple emails at once by using a queue. If any of the emails fail validation, no emails will be sent.
 
-```
+```js
 var queue = apostle.createQueue();
 
-queue.add('welcome_email', {email: 'mal@apostle.io'});
-queue.add('order_email', {email: 'mal@apostle.io', order: order})
+queue.push('welcome_email', {email: 'mal@apostle.io'});
+queue.push('order_email', {email: 'mal@apostle.io', order: order})
 
-queue.deliver(callback);
+queue.deliver().then(success, error);
 ```
 
 ### Failure Responses
 
-When recieving a callback with `success == false && message == 'error'`, it means that the delivery to Apostle.io has failed. There are several circumstances where this might occur. You should check the `response.status` value to determine your next action. Any 2xx status code is considered a success, and will not return a `success` value of false. Shortcut methods are available for some responses. In all cases, except a server error,  you can check `response.body.message` for more information.
+When recieving an error callback with `message == 'error'`, it means that the delivery to Apostle.io has failed. There are several circumstances where this might occur. You should check the `response.status` value to determine your next action. Any 2xx status code is considered a success, and will resolve the returned promise. Shortcut methods are available for some responses. In all cases, except a server error,  you can check `response.body.message` for more information.
 
 * `response.unauthorized`, `response.status == 401` – Authorization failed. Either no domain key, or an invalid domain key was supplied.
 * `response.badRequest`, `response.status == 400` – Either no json, or invalid json was supplied to the delivery endpoint. This should not occur when using the library correctly.
