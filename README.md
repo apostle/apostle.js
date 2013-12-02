@@ -79,7 +79,7 @@ apostle.deliver(…).then(success, error);
 ```
 
 * Success does not receive any arguments.
-* In the case of invalid details being passed, no external request will be made the promise will be rejected. `message` will be `"invalid"`, and `response` will be an array of mail messages with an error property.
+* In the case of invalid details being passed, no external request will be made and the promise will be rejected. `message` will be `"invalid"`, and `response` will be an array of mail messages with an error property.
 * In the case of delivery failure, the promise will be rejected. `message` will be `"error"`, and `response`  will be a [Superagent Response Object](http://visionmedia.github.io/superagent/#response-properties). See below for error status codes and their meanings.
 
 
