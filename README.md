@@ -39,7 +39,7 @@ Apostle.js depends on [Superagent](https://github.com/visionmedia/superagent), w
 You will need to provide your apostle domain key to send emails.
 
 ```js
-apostle.domainKey: "Your domain key";
+apostle.domainKey = "Your domain key";
 ```
 
 ### Sending Email
