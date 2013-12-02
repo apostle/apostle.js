@@ -1,6 +1,2 @@
-*.class
+node_modules/*
 
-# Package Files #
-*.jar
-*.war
-*.ear
