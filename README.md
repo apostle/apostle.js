@@ -5,7 +5,7 @@ Node.js and JavaScript bindings for Apostle.io.
 
 You can use this library to send emails via Apostle.io from both the server and the client. The Apostle.io delivery API supports Cross Origin Resource Sharing (CORS).
 
-## Installation
+## Node Installation
 
 ### Installing via NPM
 
@@ -18,6 +18,8 @@ In your code
 ```
 var apostle = require("apostle");
 ```
+
+## Browser Installation
 
 ### Installing via Bower
 
