@@ -10,7 +10,7 @@ You can use this library to send emails via Apostle.io from both the server and 
 ### Installing via NPM
 
 ```
-npm install apostle
+npm install apostle.io
 ```
 
 In your code
