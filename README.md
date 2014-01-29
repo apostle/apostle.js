@@ -1,5 +1,6 @@
 # apostle.js
 
+[![Build Status](https://travis-ci.org/apostle/apostle.js.png?branch=master)](https://travis-ci.org/apostle/apostle.js)
 
 Node.js and JavaScript bindings for [Apostle.io](http://apostle.io).
 
