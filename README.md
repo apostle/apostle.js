@@ -1,6 +1,7 @@
 # apostle.js
 
 [![Build Status](https://travis-ci.org/apostle/apostle.js.png?branch=master)](https://travis-ci.org/apostle/apostle.js)
+[![NPM version](https://badge.fury.io/js/apostle.png)](http://badge.fury.io/js/apostle)
 
 Node.js and JavaScript bindings for [Apostle.io](http://apostle.io).
 
