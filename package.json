@@ -12,7 +12,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "main": "./lib/apostle.js",
+  "main": "./lib/index.js",
   "dependencies": {
 	  "superagent": "~0.15"
   },
