@@ -1,7 +1,7 @@
 {
   "name": "apostle.io",
-  "version": "0.1.1",
-  "description": "JavaScript and node.js bindings for Apostle.io",
+  "version": "0.1.2",
+  "description": "JavaScript and NodeJS bindings for Apostle.io",
   "author": "Mal Curtis",
   "license": "MIT",
   "repository": {
