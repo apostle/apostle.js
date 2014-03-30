@@ -1,0 +1,152 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.15
+4 verbose publish [ '.' ]
+5 verbose read json /httpd/apostle.js/package.json
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/jujhar/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz
+14 verbose folder .
+15 info prepublish apostle.io@0.1.2
+16 silly lockFile 3a52ce78- .
+17 verbose lock . /home/jujhar/.npm/3a52ce78-.lock
+18 silly lockFile b3fc1469-3473-0-34692189167253673-tmp-tgz /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz
+19 verbose lock /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz /home/jujhar/.npm/b3fc1469-3473-0-34692189167253673-tmp-tgz.lock
+20 silly lockFile 3a52ce78- .
+21 silly lockFile 3a52ce78- .
+22 silly lockFile b3fc1469-3473-0-34692189167253673-tmp-tgz /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz
+23 silly lockFile b3fc1469-3473-0-34692189167253673-tmp-tgz /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz
+24 verbose tar unpack /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz
+25 silly lockFile 2e7230e4-3473-0-34692189167253673-package /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package
+26 verbose lock /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package /home/jujhar/.npm/2e7230e4-3473-0-34692189167253673-package.lock
+27 silly lockFile b3fc1469-3473-0-34692189167253673-tmp-tgz /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz
+28 verbose lock /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz /home/jujhar/.npm/b3fc1469-3473-0-34692189167253673-tmp-tgz.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 silly gunzTarPerm extractEntry package.json
+31 silly gunzTarPerm extractEntry .npmignore
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm extractEntry LICENSE
+34 silly gunzTarPerm extractEntry .package.json.un~
+35 silly gunzTarPerm extractEntry .travis.yml
+36 silly gunzTarPerm extractEntry bower.json
+37 silly gunzTarPerm extractEntry lib/index.js
+38 silly gunzTarPerm extractEntry package.json~
+39 silly gunzTarPerm extractEntry test/run.sh
+40 silly gunzTarPerm extractEntry test/unit/apostleSpec.js
+41 verbose read json /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package/package.json
+42 silly lockFile 2e7230e4-3473-0-34692189167253673-package /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package
+43 silly lockFile 2e7230e4-3473-0-34692189167253673-package /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package
+44 silly lockFile b3fc1469-3473-0-34692189167253673-tmp-tgz /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz
+45 silly lockFile b3fc1469-3473-0-34692189167253673-tmp-tgz /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/tmp.tgz
+46 verbose from cache /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package/package.json
+47 verbose tar pack [ '/home/jujhar/.npm/apostle.io/0.1.2/package.tgz',
+47 verbose tar pack   '/home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package' ]
+48 verbose tarball /home/jujhar/.npm/apostle.io/0.1.2/package.tgz
+49 verbose folder /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package
+50 silly lockFile 2e7230e4-3473-0-34692189167253673-package /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package
+51 verbose lock /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package /home/jujhar/.npm/2e7230e4-3473-0-34692189167253673-package.lock
+52 silly lockFile 363654ea-npm-apostle-io-0-1-2-package-tgz /home/jujhar/.npm/apostle.io/0.1.2/package.tgz
+53 verbose lock /home/jujhar/.npm/apostle.io/0.1.2/package.tgz /home/jujhar/.npm/363654ea-npm-apostle-io-0-1-2-package-tgz.lock
+54 silly lockFile 2e7230e4-3473-0-34692189167253673-package /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package
+55 silly lockFile 2e7230e4-3473-0-34692189167253673-package /home/jujhar/tmp/npm-4414/1396123753473-0.34692189167253673/package
+56 silly lockFile 363654ea-npm-apostle-io-0-1-2-package-tgz /home/jujhar/.npm/apostle.io/0.1.2/package.tgz
+57 silly lockFile 363654ea-npm-apostle-io-0-1-2-package-tgz /home/jujhar/.npm/apostle.io/0.1.2/package.tgz
+58 silly lockFile 94098227-har-npm-apostle-io-0-1-2-package /home/jujhar/.npm/apostle.io/0.1.2/package
+59 verbose lock /home/jujhar/.npm/apostle.io/0.1.2/package /home/jujhar/.npm/94098227-har-npm-apostle-io-0-1-2-package.lock
+60 silly lockFile 94098227-har-npm-apostle-io-0-1-2-package /home/jujhar/.npm/apostle.io/0.1.2/package
+61 silly lockFile 94098227-har-npm-apostle-io-0-1-2-package /home/jujhar/.npm/apostle.io/0.1.2/package
+62 verbose tar unpack /home/jujhar/.npm/apostle.io/0.1.2/package.tgz
+63 silly lockFile 94098227-har-npm-apostle-io-0-1-2-package /home/jujhar/.npm/apostle.io/0.1.2/package
+64 verbose lock /home/jujhar/.npm/apostle.io/0.1.2/package /home/jujhar/.npm/94098227-har-npm-apostle-io-0-1-2-package.lock
+65 silly lockFile 363654ea-npm-apostle-io-0-1-2-package-tgz /home/jujhar/.npm/apostle.io/0.1.2/package.tgz
+66 verbose lock /home/jujhar/.npm/apostle.io/0.1.2/package.tgz /home/jujhar/.npm/363654ea-npm-apostle-io-0-1-2-package-tgz.lock
+67 silly gunzTarPerm modes [ '755', '644' ]
+68 silly gunzTarPerm extractEntry package.json
+69 silly gunzTarPerm extractEntry .npmignore
+70 silly gunzTarPerm extractEntry README.md
+71 silly gunzTarPerm extractEntry LICENSE
+72 silly gunzTarPerm extractEntry .package.json.un~
+73 silly gunzTarPerm extractEntry .travis.yml
+74 silly gunzTarPerm extractEntry bower.json
+75 silly gunzTarPerm extractEntry lib/index.js
+76 silly gunzTarPerm extractEntry package.json~
+77 silly gunzTarPerm extractEntry test/run.sh
+78 silly gunzTarPerm extractEntry test/unit/apostleSpec.js
+79 verbose read json /home/jujhar/.npm/apostle.io/0.1.2/package/package.json
+80 silly lockFile 94098227-har-npm-apostle-io-0-1-2-package /home/jujhar/.npm/apostle.io/0.1.2/package
+81 silly lockFile 94098227-har-npm-apostle-io-0-1-2-package /home/jujhar/.npm/apostle.io/0.1.2/package
+82 silly lockFile 363654ea-npm-apostle-io-0-1-2-package-tgz /home/jujhar/.npm/apostle.io/0.1.2/package.tgz
+83 silly lockFile 363654ea-npm-apostle-io-0-1-2-package-tgz /home/jujhar/.npm/apostle.io/0.1.2/package.tgz
+84 silly shasum updated bytes 5626
+85 info shasum 65385658887fa26adcc108de926b7d975aa79698
+85 info shasum /home/jujhar/.npm/apostle.io/0.1.2/package.tgz
+86 verbose from cache /home/jujhar/.npm/apostle.io/0.1.2/package/package.json
+87 verbose chmod /home/jujhar/.npm/apostle.io/0.1.2/package.tgz 644
+88 verbose chown /home/jujhar/.npm/apostle.io/0.1.2/package.tgz [ 1000, 1000 ]
+89 silly lockFile 3a52ce78- .
+90 silly publish { name: 'apostle.io',
+90 silly publish   version: '0.1.2',
+90 silly publish   description: 'JavaScript and NodeJS bindings for Apostle.io',
+90 silly publish   author: { name: 'Mal Curtis' },
+90 silly publish   license: 'MIT',
+90 silly publish   repository: { type: 'git', url: 'git://github.com/apostle/apostle.js.git' },
+90 silly publish   homepage: 'http://github.com/apostle/apostle.js',
+90 silly publish   engines: { node: '>=0.10.0' },
+90 silly publish   main: './lib/apostle.js',
+90 silly publish   dependencies: { superagent: '~0.15' },
+90 silly publish   devDependencies: { mocha: '~1.14', sinon: '~1.7' },
+90 silly publish   scripts: { test: 'test/run.sh' },
+90 silly publish   readme: '# apostle.js\n\n[![Build Status](https://travis-ci.org/apostle/apostle.js.png?branch=master)](https://travis-ci.org/apostle/apostle.js)\n[![NPM version](https://badge.fury.io/js/apostle.png)](http://badge.fury.io/js/apostle)\n\nNode.js and JavaScript bindings for [Apostle.io](http://apostle.io).\n\nYou can use this library to send emails via Apostle.io from both the server and the client. The Apostle.io delivery API supports Cross Origin Resource Sharing (CORS).\n\n## Node Installation\n\n### Installing via NPM\n\n```\nnpm install apostle.io\n```\n\nIn your code\n\n```\nvar apostle = require("apostle");\n```\n\n## Browser Installation\n\n### Installing via Bower\n\n```\nbower install apostle\n```\n\n### Installing manually\n\nDownload the latest code from GitHub, and include `lib/index.js` in your html.\n\nApostle.js depends on [Superagent](https://github.com/visionmedia/superagent), which you will need to make available to the browser too.\n\n\n## Usage\n\n### Domain Key\n\nYou will need to provide your apostle domain key to send emails.\n\n```js\napostle.domainKey = "Your domain key";\n```\n\n### Sending Email\n\nSending an email is easy, a minimal example may look like this.\n\n```js\napostle.deliver(\'welcome_email\', {email: \'mal@apostle.io\'});\n```\n\nYou can pass any information that your Apostle.io template might need.\n\n\n```js\nvar order = {\n\titems: [\'Widget frame\', \'Widget chain\', \'Widget seat\'],\n\tid: "abc123"\n};\n\napostle.deliver(\'order_complete\', {\n\temail: \'mal@apostle.io\',\n\treplyTo: \'support@apostle.io\',\n\torder: order\n});\n```\n\n### Promises\n`apostle.deliver` returns a promise that you can attach success and error callbacks to.\n\n```js\nvar success = function(){},\n\terror = function(message, response){};\n\t\napostle.deliver(…).then(success, error);\n```\n\n* Success does not receive any arguments.\n* In the case of invalid details being passed, no external request will be made and the promise will be rejected. `message` will be `"invalid"`, and `response` will be an array of mail messages with an error property.\n* In the case of delivery failure, the promise will be rejected. `message` will be `"error"`, and `response`  will be a [Superagent Response Object](http://visionmedia.github.io/superagent/#response-properties). See below for error status codes and their meanings.\n\n\n```js\nvar success = function(){},\n\terror = function(message, response){};\n\n// Invalid Template\napostle.mail(false, {email: \'mal@apostle.io\'}).then(success, error);\n/**\n * error will receive\n * message: \'invalid\'\n * response: [{ email: \'mal@apostle.io\', error: \'No template provided\'}]\n */\n \n// Invalid Email\napostle.mail(\'welcome_email\', {}).then(success, error);\n/**\n * error will receive\n * message: \'invalid\'\n * response: [{ template_id: \'welcome_email\', error: \'No email provided\'}]\n */\n\n// In the case of a server error\napostle.mail(\'welcome_email\', {email: \'mal@apostle.io\'}).then(success, error);\n/**\n * error will receive\n * message: \'error\'\n * response: Superagent Response Object\n */\n \n// Success\napostle.mail(\'welcome_email\', {email: \'mal@apostle.io\'}).then(success, error);\n/**\n * success will be called with no arguments\n */\n\n```\n\n### Sending multiple emails\n\nYou can send multiple emails at once by using a queue. If any of the emails fail validation, no emails will be sent.\n\n```js\nvar queue = apostle.createQueue();\n\nqueue.push(\'welcome_email\', {email: \'mal@apostle.io\'});\nqueue.push(\'order_email\', {email: \'mal@apostle.io\', order: order})\n\nqueue.deliver().then(success, error);\n```\n\n### Failure Responses\n\nWhen recieving an error callback with `message == \'error\'`, it means that the delivery to Apostle.io has failed. There are several circumstances where this might occur. You should check the `response.status` value to determine your next action. Any 2xx status code is considered a success, and will resolve the returned promise. Shortcut methods are available for some responses. In all cases, except a server error,  you can check `response.body.message` for more information.\n\n* `response.unauthorized`, `response.status == 401` – Authorization failed. Either no domain key, or an invalid domain key was supplied.\n* `response.badRequest`, `response.status == 400` – Either no json, or invalid json was supplied to the delivery endpoint. This should not occur when using the library correctly.\n* `response.status == 422` – Unprocessable entitity. An invalid payload was supplied, usually a missing email or template id, or no recipients key. `Apostle.js` should validate before sending, so it is unlikely you will see this response.\n* `response.serverError`, `response.status == 500` – Server error occured. Something went wrong at the Apostle API, you should try again with exponential backoff.\n\n\n## Who\nCreated with ♥ by [Mal Curtis](http://github.com/snikch) ([@snikchnz](http://twitter.com/snikchnz))\n\n\n## Contributing\n\n1. Fork it\n2. Create your feature branch (`git checkout -b my-new-feature`)\n3. Commit your changes (`git commit -am \'Add some feature\'`)\n4. Push to the branch (`git push origin my-new-feature`)\n5. Create new Pull Request\n\n\n\n\n\n\n\n',
+90 silly publish   readmeFilename: 'README.md',
+90 silly publish   _id: 'apostle.io@0.1.2',
+90 silly publish   dist: { shasum: '65385658887fa26adcc108de926b7d975aa79698' },
+90 silly publish   _from: '.' }
+91 verbose url raw apostle.io
+92 verbose url resolving [ 'https://registry.npmjs.org/', './apostle.io' ]
+93 verbose url resolved https://registry.npmjs.org/apostle.io
+94 info trying registry request attempt 1 at 20:10:13
+95 http PUT https://registry.npmjs.org/apostle.io
+96 http 403 https://registry.npmjs.org/apostle.io
+97 info trying registry request attempt 1 at 20:10:15
+98 http PUT https://registry.npmjs.org/apostle.io
+99 http 403 https://registry.npmjs.org/apostle.io
+100 error publish Failed PUT response 403
+101 error Error: forbidden user: jujhars13 not authorized to modify apostle.io
+101 error Changed: readme "# apostle.js\u000a\u000a\u000aNode.js and JavaScript bindings for [Apostle.io](http://apostle.io).\u000a\u000aYou can use this library to send emails via Apostle.io from both the server and the client. The Apostle.io delivery API supports Cross Origin Resource Sharing (CORS).\u000a\u000a## Node Installation\u000a\u000a### Installing via NPM\u000a\u000a```\u000anpm install apostle.io\u000a```\u000a\u000aIn your code\u000a\u000a```\u000avar apostle = require(\"apostle\");\u000a```\u000a\u000a## Browser Installation\u000a\u000a### Installing via Bower\u000a\u000a```\u000abower install apostle\u000a```\u000a\u000a### Installing manually\u000a\u000aDownload the latest code from GitHub, and include `lib/index.js` in your html.\u000a\u000aApostle.js depends on [Superagent](https://github.com/visionmedia/superagent), which you will need to make available to the browser too.\u000a\u000a\u000a## Usage\u000a\u000a### Domain Key\u000a\u000aYou will need to provide your apostle domain key to send emails.\u000a\u000a```js\u000aapostle.domainKey = \"Your domain key\";\u000a```\u000a\u000a### Sending Email\u000a\u000aSending an email is easy, a minimal example may look like this.\u000a\u000a```js\u000aapostle.deliver('welcome_email', {email: 'mal@apostle.io'});\u000a```\u000a\u000aYou can pass any information that your Apostle.io template might need.\u000a\u000a\u000a```js\u000avar order = {\u000a\u0009items: ['Widget frame', 'Widget chain', 'Widget seat'],\u000a\u0009id: \"abc123\"\u000a};\u000a\u000aapostle.deliver('order_complete', {\u000a\u0009email: 'mal@apostle.io',\u000a\u0009replyTo: 'support@apostle.io',\u000a\u0009order: order\u000a});\u000a```\u000a\u000a### Promises\u000a`apostle.deliver` returns a promise that you can attach success and error callbacks to.\u000a\u000a```js\u000avar success = function(){},\u000a\u0009error = function(message, response){};\u000a\u0009\u000aapostle.deliver(…).then(success, error);\u000a```\u000a\u000a* Success does not receive any arguments.\u000a* In the case of invalid details being passed, no external request will be made and the promise will be rejected. `message` will be `\"invalid\"`, and `response` will be an array of mail messages with an error property.\u000a* In the case of delivery failure, the promise will be rejected. `message` will be `\"error\"`, and `response`  will be a [Superagent Response Object](http://visionmedia.github.io/superagent/#response-properties). See below for error status codes and their meanings.\u000a\u000a\u000a```js\u000avar success = function(){},\u000a\u0009error = function(message, response){};\u000a\u000a// Invalid Template\u000aapostle.mail(false, {email: 'mal@apostle.io'}).then(success, error);\u000a/**\u000a * error will receive\u000a * message: 'invalid'\u000a * response: [{ email: 'mal@apostle.io', error: 'No template provided'}]\u000a */\u000a \u000a// Invalid Email\u000aapostle.mail('welcome_email', {}).then(success, error);\u000a/**\u000a * error will receive\u000a * message: 'invalid'\u000a * response: [{ template_id: 'welcome_email', error: 'No email provided'}]\u000a */\u000a\u000a// In the case of a server error\u000aapostle.mail('welcome_email', {email: 'mal@apostle.io'}).then(success, error);\u000a/**\u000a * error will receive\u000a * message: 'error'\u000a * response: Superagent Response Object\u000a */\u000a \u000a// Success\u000aapostle.mail('welcome_email', {email: 'mal@apostle.io'}).then(success, error);\u000a/**\u000a * success will be called with no arguments\u000a */\u000a\u000a```\u000a\u000a### Sending multiple emails\u000a\u000aYou can send multiple emails at once by using a queue. If any of the emails fail validation, no emails will be sent.\u000a\u000a```js\u000avar queue = apostle.createQueue();\u000a\u000aqueue.push('welcome_email', {email: 'mal@apostle.io'});\u000aqueue.push('order_email', {email: 'mal@apostle.io', order: order})\u000a\u000aqueue.deliver().then(success, error);\u000a```\u000a\u000a### Failure Responses\u000a\u000aWhen recieving an error callback with `message == 'error'`, it means that the delivery to Apostle.io has failed. There are several circumstances where this might occur. You should check the `response.status` value to determine your next action. Any 2xx status code is considered a success, and will resolve the returned promise. Shortcut methods are available for some responses. In all cases, except a server error,  you can check `response.body.message` for more information.\u000a\u000a* `response.unauthorized`, `response.status == 401` – Authorization failed. Either no domain key, or an invalid domain key was supplied.\u000a* `response.badRequest`, `response.status == 400` – Either no json, or invalid json was supplied to the delivery endpoint. This should not occur when using the library correctly.\u000a* `response.status == 422` – Unprocessable entitity. An invalid payload was supplied, usually a missing email or template id, or no recipients key. `Apostle.js` should validate before sending, so it is unlikely you will see this response.\u000a* `response.serverError`, `response.status == 500` – Server error occured. Something went wrong at the Apostle API, you should try again with exponential backoff.\u000a\u000a\u000a## Who\u000aCreated with ♥ by [Mal Curtis](http://github.com/snikch) ([@snikchnz](http://twitter.com/snikchnz))\u000a\u000a\u000a## Contributing\u000a\u000a1. Fork it\u000a2. Create your feature branch (`git checkout -b my-new-feature`)\u000a3. Commit your changes (`git commit -am 'Add some feature'`)\u000a4. Push to the branch (`git push origin my-new-feature`)\u000a5. Create new Pull Request\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a" -> "# apostle.js\u000a\u000a[![Build Status](https://travis-ci.org/apostle/apostle.js.png?branch=master)](https://travis-ci.org/apostle/apostle.js)\u000a[![NPM version](https://badge.fury.io/js/apostle.png)](http://badge.fury.io/js/apostle)\u000a\u000aNode.js and JavaScript bindings for [Apostle.io](http://apostle.io).\u000a\u000aYou can use this library to send emails via Apostle.io from both the server and the client. The Apostle.io delivery API supports Cross Origin Resource Sharing (CORS).\u000a\u000a## Node Installation\u000a\u000a### Installing via NPM\u000a\u000a```\u000anpm install apostle.io\u000a```\u000a\u000aIn your code\u000a\u000a```\u000avar apostle = require(\"apostle\");\u000a```\u000a\u000a## Browser Installation\u000a\u000a### Installing via Bower\u000a\u000a```\u000abower install apostle\u000a```\u000a\u000a### Installing manually\u000a\u000aDownload the latest code from GitHub, and include `lib/index.js` in your html.\u000a\u000aApostle.js depends on [Superagent](https://github.com/visionmedia/superagent), which you will need to make available to the browser too.\u000a\u000a\u000a## Usage\u000a\u000a### Domain Key\u000a\u000aYou will need to provide your apostle domain key to send emails.\u000a\u000a```js\u000aapostle.domainKey = \"Your domain key\";\u000a```\u000a\u000a### Sending Email\u000a\u000aSending an email is easy, a minimal example may look like this.\u000a\u000a```js\u000aapostle.deliver('welcome_email', {email: 'mal@apostle.io'});\u000a```\u000a\u000aYou can pass any information that your Apostle.io template might need.\u000a\u000a\u000a```js\u000avar order = {\u000a\u0009items: ['Widget frame', 'Widget chain', 'Widget seat'],\u000a\u0009id: \"abc123\"\u000a};\u000a\u000aapostle.deliver('order_complete', {\u000a\u0009email: 'mal@apostle.io',\u000a\u0009replyTo: 'support@apostle.io',\u000a\u0009order: order\u000a});\u000a```\u000a\u000a### Promises\u000a`apostle.deliver` returns a promise that you can attach success and error callbacks to.\u000a\u000a```js\u000avar success = function(){},\u000a\u0009error = function(message, response){};\u000a\u0009\u000aapostle.deliver(…).then(success, error);\u000a```\u000a\u000a* Success does not receive any arguments.\u000a* In the case of invalid details being passed, no external request will be made and the promise will be rejected. `message` will be `\"invalid\"`, and `response` will be an array of mail messages with an error property.\u000a* In the case of delivery failure, the promise will be rejected. `message` will be `\"error\"`, and `response`  will be a [Superagent Response Object](http://visionmedia.github.io/superagent/#response-properties). See below for error status codes and their meanings.\u000a\u000a\u000a```js\u000avar success = function(){},\u000a\u0009error = function(message, response){};\u000a\u000a// Invalid Template\u000aapostle.mail(false, {email: 'mal@apostle.io'}).then(success, error);\u000a/**\u000a * error will receive\u000a * message: 'invalid'\u000a * response: [{ email: 'mal@apostle.io', error: 'No template provided'}]\u000a */\u000a \u000a// Invalid Email\u000aapostle.mail('welcome_email', {}).then(success, error);\u000a/**\u000a * error will receive\u000a * message: 'invalid'\u000a * response: [{ template_id: 'welcome_email', error: 'No email provided'}]\u000a */\u000a\u000a// In the case of a server error\u000aapostle.mail('welcome_email', {email: 'mal@apostle.io'}).then(success, error);\u000a/**\u000a * error will receive\u000a * message: 'error'\u000a * response: Superagent Response Object\u000a */\u000a \u000a// Success\u000aapostle.mail('welcome_email', {email: 'mal@apostle.io'}).then(success, error);\u000a/**\u000a * success will be called with no arguments\u000a */\u000a\u000a```\u000a\u000a### Sending multiple emails\u000a\u000aYou can send multiple emails at once by using a queue. If any of the emails fail validation, no emails will be sent.\u000a\u000a```js\u000avar queue = apostle.createQueue();\u000a\u000aqueue.push('welcome_email', {email: 'mal@apostle.io'});\u000aqueue.push('order_email', {email: 'mal@apostle.io', order: order})\u000a\u000aqueue.deliver().then(success, error);\u000a```\u000a\u000a### Failure Responses\u000a\u000aWhen recieving an error callback with `message == 'error'`, it means that the delivery to Apostle.io has failed. There are several circumstances where this might occur. You should check the `response.status` value to determine your next action. Any 2xx status code is considered a success, and will resolve the returned promise. Shortcut methods are available for some responses. In all cases, except a server error,  you can check `response.body.message` for more information.\u000a\u000a* `response.unauthorized`, `response.status == 401` – Authorization failed. Either no domain key, or an invalid domain key was supplied.\u000a* `response.badRequest`, `response.status == 400` – Either no json, or invalid json was supplied to the delivery endpoint. This should not occur when using the library correctly.\u000a* `response.status == 422` – Unprocessable entitity. An invalid payload was supplied, usually a missing email or template id, or no recipients key. `Apostle.js` should validate before sending, so it is unlikely you will see this response.\u000a* `response.serverError`, `response.status == 500` – Server error occured. Something went wrong at the Apostle API, you should try again with exponential backoff.\u000a\u000a\u000a## Who\u000aCreated with ♥ by [Mal Curtis](http://github.com/snikch) ([@snikchnz](http://twitter.com/snikchnz))\u000a\u000a\u000a## Contributing\u000a\u000a1. Fork it\u000a2. Create your feature branch (`git checkout -b my-new-feature`)\u000a3. Commit your changes (`git commit -am 'Add some feature'`)\u000a4. Push to the branch (`git push origin my-new-feature`)\u000a5. Create new Pull Request\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a"
+101 error Changed: time.modified "2014-03-29T20:07:28.189Z" -> "2014-03-29T20:10:12.567Z": apostle.io
+101 error     at RegClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:269:14)
+101 error     at Request.self.callback (/usr/lib/nodejs/request/main.js:119:22)
+101 error     at Request.<anonymous> (/usr/lib/nodejs/request/main.js:525:16)
+101 error     at Request.EventEmitter.emit (events.js:95:17)
+101 error     at IncomingMessage.<anonymous> (/usr/lib/nodejs/request/main.js:484:14)
+101 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+101 error     at _stream_readable.js:910:16
+101 error     at process._tickCallback (node.js:415:13)
+102 error If you need help, you may report this log at:
+102 error     <http://bugs.debian.org/npm>
+102 error or use
+102 error     reportbug --attach /httpd/apostle.js/npm-debug.log npm
+103 error System Linux 3.11.0-18-generic
+104 error command "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+105 error cwd /httpd/apostle.js
+106 error node -v v0.10.15
+107 error npm -v 1.2.18
+108 verbose exit [ 1, true ]
