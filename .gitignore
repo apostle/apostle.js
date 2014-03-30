@@ -1,8 +1,0 @@
-node_modules/*
-bower_components/*
-# other cruft
-*~
-*.swp
-*.swo
-.idea
-
