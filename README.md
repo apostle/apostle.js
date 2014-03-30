@@ -19,7 +19,7 @@ npm install apostle.io
 In your code
 
 ```
-var apostle = require("apostle");
+var apostle = require("apostle.io");
 ```
 
 ## Browser Installation
