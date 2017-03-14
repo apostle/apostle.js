@@ -1,6 +1,6 @@
 {
   "name": "apostle",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/apostle/apostle.js",
   "authors": [
     "Mal Curtis <mal@apostle.io>"
@@ -12,7 +12,7 @@
     "apostle.io"
   ],
    "dependencies": {
-    "superagent": "0.15"
+    "superagent": "3.5"
   },
   "license": "MIT",
   "ignore": [

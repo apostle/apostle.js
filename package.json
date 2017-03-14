@@ -1,6 +1,6 @@
 {
   "name": "apostle.io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript and node.js bindings for Apostle.io",
   "author": "Mal Curtis",
   "license": "MIT",
@@ -14,7 +14,7 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-	  "superagent": "~0.15"
+	  "superagent": "~3.5"
   },
   "devDependencies": {
     "mocha": "~1.14",
