@@ -70,6 +70,16 @@ apostle.deliver('order_complete', {
 });
 ```
 
+### Sending Email with attachments
+
+Sending an email with attachment. Sample example may look like this.
+
+```js
+attachments = apostle.attachment('working.txt','hi its working')
+apostle.deliver('welcome_email', {email: 'mal@apostle.io', 'attachments':attachments});
+```
+
+
 ### Promises
 `apostle.deliver` returns a promise that you can attach success and error callbacks to.
 
